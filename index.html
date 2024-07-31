@@ -2,96 +2,154 @@
 <html lang="en">
 
 <head>
-    <title>Chenny Chen Chicago</title>
+    <title>Chenny's Chicago</title>
+    <link rel="icon" href="Images/icon.webp">
 
-    <style>
-        body {
-            background-color: peachpuff;
-        }
-
-        h1 {
-            color: red
-        }
-
-        p {}
-
-        .important {
-            color: darkblue;
-        }
-        
-        #interesting {
-            background-color: lightblue;
-            padding: 10px;
-            border: 2px solid darkblue;
-        }
-        
-    </style>
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="reset-webview.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+    <header>
+        <nav>
+            <img src="Images/flagg.webp" alt="Stars" class="nav-image">
+            <ul>
+                <li><a href="#" onclick="scrollToTop(event)">Home</a></li>
+                <li><a href="#about-nav">About </a></li>
+                <li><a href="#data-nav">Data </a></li>
+                <li><a href="#impact-nav">Impact </a></li>
+                <li><a href="#faq-nav">FAQ</a></li>
+                <li ><button id="theme-button">Toggle Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!--- Headings --->
-    <img />
-    <!-- if you want to add an image, use this tag and link to the actual image location in your project with the src attribute -->
-    <h1 style="text-align: center;">Can You Read The Problem?       </h1>
-    <h3 class="important">Chicago is the best city in the world. But like any major city, it faces its own set of challenges. One notable issue is Chicago's severe illiteracy epidemic.</h3>
-    <button type="button">More Resources</button>
-    <button type="button">Support The Mission</button>
+    <section class="banner">    
+        <h1>Can You Read The Problem? </h1>
+        <h2 class="subheading">Chicago is the best city in the world. But like any major city, it faces its own set of challenges. One prominent issue is Chicago's severe illiteracy epidemic.</h2>
+        <button class= "header-button" type="button">More Resources</button>
+        <button class = "header-button" type="button">Support The Mission</button>
+    </section>
 
+    <section class="about-section fade-in-section">
+        <h2 id = "about-nav">About</h2>
+        <p id="interesting">Chicago's illiteracy rate is one of the highest in the United States, with a high of over 90 percent. This is due to the high population of Chicagoans, who are primarily from low-income backgrounds. According to the 2023 Chicago Public Schools state report card, 12.2% of low-income third graders were reading at the expected grade level.</p>
+    </section>
 
-    <!--- About --->
-    <h2>About My Topic</h2>
-     <p id="interesting">Chicago's illiteracy rate is one of the highest in the United States, with a high of over 90 percent. This is due to the high population of Chicagoans, who are primarily from low-income backgrounds. According to the 2023 Chicago Public Schools state report card, 12.2% of low-income third graders were reading at the expected grade level. </p>
+    <section class="data-section fade-in-section"> 
+        <h2 id = "data-nav">Data</h2>
+        <h3>Add some charts + captions that illustrate my topic and why it is a problem </h3>
+        <ul>
+            <li> less than 15%</li>
+            <li> 15%-25%</li>
+            <li> 25%-35%</li>
+            <li> 35%-45%</li>
+            <li> >45%</li>
+        </ul>
+    </section>
 
+    <section class="impact-section fade-in-section">
+        <h2 id = "impact-nav">Impact!</h2>
+        <div class="my-flex-container">
 
-    <!--- Data --->
+            <div class = "impact-box">
+                <img src="Images/Stressed.png" width="300" height="200">
+                <br>
+                <p>Illiteracy can lead to poor attendance, academic performance, and high dropout rates. </p>
+            </div>
 
-    <h3>Data about my topic</h3>
-    <img src="" />
-    <h4>Add some charts + captions that illustrate my topic and why it is a problem </h4>
+            <div class = "impact-box">
+                <img src="Images/prison.webp" width="300" height="200">
+                <br>
+                <p> 70% of all incarcerated adults are illiterate and cannot read at a fourth-grade level.</p>
+            </div>
 
-    <ul>
-        <li> less than 15%</li>
-        <li> 15%-25%</li>
-        <li> 25%-35%</li>
-        <li> 35%-45%</li>
-        <li> >45%</li>
-    </ul>
-    <!--- Impact --->
-    <h2>Impact!</h2>
+            <div class = "impact-box"> 
+                <img src="Images/comm.webp" width="300" height="200">
+                <br>
+                <p>Illiteracy can make it difficult to participate in society and government, leading to feelings of isolation and social exclusion. It can also affect a person's self-esteem, emotional and behavioral skills, and peer connections.</p>
+            </div>
 
-    <img src="Images/Academic Stress.png" width="300" height="200">
-    <p>Illiteracy can lead to poor attendence, academic performance, and high drop out rates. </p>
-    <img src="Images/school-to-prison-v2-1170x628.webp" width="300" height="200">
-    <p> 70% of all incarcerated adults are illiterate and cannot read at a fourth-grade level.</p>
+            <div class = "impact-box"> 
+                <img src="Images/money.jpg" width="300" height="200">
+                <br>
+                <p>Illiteracy can lead to poverty, unemployment, and lower-quality jobs. People who are illiterate may have difficulty reading instructions, operating machinery, or managing finances, which can make it hard to secure well-paying jobs and financial stability.</p>
+            </div>
 
-    <h3>Where can this problem have lasting effects?</h3>
-    <p>Why?
-    </p>
+        </div>
+    </section>
 
-    <img src="" />
-    <h3>Where else can this problem have lasting effects?</h3>
-    <p>Why?
-    </p>
+    <div class = "petition fade-in-section">
+        <h2>Sign Our Petition 📢</h2>
+            <div class="petition-container">
+                <div class="petition-para">
+                    <p>Join our petition to help Chicago students overcome the city's alarming illiteracy problem. By increasing funding for literacy programs and providing essential resources, we can empower our youth with the skills they need for a brighter future. Together, we can break the cycle of illiteracy and create opportunities for all Chicago students to succeed.</p>
+                </div>
 
-    <img src="" />
-    <h3>Where else else can this problem have lasting effects?</h3>
-    <p>Why?
-    </p>
+                <div class="signatures" id = "newSignature">
+                    <p>🖊️ Brandon Johnson - Brandon.Johnson@cookcountyil.gov</p>
+                </div>
+            </div>
 
+        <p>Total Signatures: <span id="signatureCount">1</span></p>
+        <br>
+        <form id="sign-petition">
 
-    <!--- News --->
-    <!--this will help with a stretch goal, if you do not want to incorporate this, then leave it alone :)-->
-    <h2>Recent News</h2>
+            <label for = "name"> Name:</label>
+            <input type = "text" id = "name">
+            <label for = "email"> Email:</label>
+            <input type = "text" id = "email">
+            <br>
+            <br>
+            <button id="signNowButton">Sign Now</button>
+        </form>
+    </div>
 
-    <a class="" href="">
-        <article>
-            <h3></h3>
-            <p></p>
-        </article>
-    </a>
+    <section class="section-faq fade-in-section">
+        <h2 id ="faq-nav">Frequently Asked Questions (FAQ)</h2>
+        <img src="" />
+        <h3>Where can this problem have lasting effects?</h3>
+        <p>Why?</p>
+        <img src="" />
+        <h3>Where else can this problem have lasting effects?</h3>
+        <p>Why?</p>
 
+        <img src="" />
+        <h3>Where else else can this problem have lasting effects?</h3>
+        <p>Why?</p>
+    </section>
 
+    <section class="news-section fade-in-section">
+        <h2>Recent News</h2>
+        <a class="recent-news" href="https://chicago.suntimes.com/other-views/2024/04/15/reading-literacy-low-income-chicago-students-illiteracy-high-dosage-tutoring-taal-hasak-lowy-op-ed" target="blank" >
+            <article>
+                <h3>Many Chicago Public Schools students struggle with illiteracy. The consequences are devastating.</h3>
+                <p>Blah Blah Blah Blah</p>
+            </article>
+        </a>
+    </section>
+
+    <div id="petition-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
+            <p id="modal-message"></p>
+            <img id="modal-image" src="Images/ty2.png" alt="Celebration" class="modal-image">
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Chenny's Chicago. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="https://www.linkedin.com/in/raymond-chen-230b16253/" target="blank" >Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
